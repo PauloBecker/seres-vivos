@@ -12,6 +12,14 @@ public class Classe extends Filo {
 		this.classe = classe;
 	}
 	
+	@Override
+	public void Cadastro() {
+		
+		System.out.println("Digite a Classe: ");
+		setClasse(scan.nextLine());
+		
+	}
+	
 	
 	
 

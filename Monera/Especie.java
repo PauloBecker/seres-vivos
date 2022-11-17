@@ -2,14 +2,22 @@ package Monera;
 
 public class Especie extends Genero {
 	
-	private String genero;
+	private String especie;
 
-	public String getGenero() {
-		return genero;
+	public String getEspecie() {
+		return especie;
 	}
 
-	public void setGenero(String genero) {
-		this.genero = genero;
+	public void setEspecie(String especie) {
+		this.especie = especie;
+	}
+	
+	@Override
+	public void Cadastro() {
+		
+		System.out.println("Digite a Espécie: ");
+		setEspecie(scan.nextLine());
+		
 	}
 	
 	

@@ -12,6 +12,14 @@ public class Ordem extends Classe {
 		this.ordem = ordem;
 	}
 	
+	@Override
+	public void Cadastro() {
+		
+		System.out.println("Digite a Ordem: ");
+		setOrdem(scan.nextLine());
+		
+	}
+	
 	
 
 }
