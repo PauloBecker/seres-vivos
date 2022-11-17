@@ -1,4 +1,4 @@
-
+package Animalia;
 
 
 import java.util.Scanner;
