@@ -1,6 +1,6 @@
 package Monera;
 
-public class Familia {
+public class Familia extends Ordem {
 	
 	private String familia;
 

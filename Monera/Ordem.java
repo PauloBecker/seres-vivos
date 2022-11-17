@@ -1,6 +1,6 @@
 package Monera;
 
-public class Ordem {
+public class Ordem extends Classe {
 	
 	private String ordem;
 
