@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class SeresVivos {
-
     Scanner scan = new Scanner(System.in);
     private String celula;
 
@@ -96,7 +95,7 @@ public class SeresVivos {
         opc = scan.nextInt();
         switch (opc){
             case 1 :
-                setMaterialGenetico("DNS");
+                setMaterialGenetico("DNA");
                 break;
             case 2:
                 setMaterialGenetico("RNA");
@@ -105,6 +104,43 @@ public class SeresVivos {
                 System.out.println("Opção inválida!!!");
         }
         System.out.println(getMaterialGenetico());
+
+        System.out.print(
+                    "Os organismos vivos podem ser divididos, a partir do critério de nutrição, em autotróficos e heterotróficos.\n" +
+                    "Digite 1 - Autotróficos\n" +
+                    "Digite 2 - Heterotrófico \n" +
+                    "Opção: ");
+        opc = scan.nextInt();
+        switch (opc){
+            case 1:
+                setNutricao("Autotróficos");
+                break;
+            case 2:
+                setNutricao("Heterotrófico");
+                break;
+            default:
+                System.out.println("Opção inválida!!!");
+        }
+        System.out.println(getNutricao());
+
+        System.out.print(
+                "Os seres vivos são capazes de reproduzir-se, ou seja, produzir descendentes.\n " +
+                "A reprodução pode ocorrer de forma sexuada ou de maneira Assexuada\n" +
+                "Digite 1 - Sexuada\n" +
+                "Digite 2 - Assexuada\n" +
+                "Opção: ");
+        opc = scan.nextInt();
+        switch (opc){
+            case 1:
+                setReproducao("Sexuada");
+                break;
+            case 2:
+                setReproducao("Assexuada");
+                break;
+            default:
+                System.out.println("Opção inválida!!!");
+        }
+        System.out.println(getNutricao());
     }
 
 }
