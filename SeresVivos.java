@@ -68,8 +68,6 @@ public class SeresVivos {
     public void entradaDeDados(){
 
         int opc = 0;
-
-
         System.out.println("============ CLASIFICAÇÃO DE SERES VIVOS =============\n");
         System.out.print(
                 "\"são as unidades funcionais e estruturais dos seres vivos, estando presentes em todos os organismos vivos, " +
