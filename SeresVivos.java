@@ -12,12 +12,34 @@ public class SeresVivos {
 
     private String reproducao;
 
-    public SeresVivos(String celula, String materialGenetico, String metabolismo, String nutricao, String reproducao) {
+    private String respiracao;
+
+    private String locomocao;
+
+    public String getRespiracao() {
+        return respiracao;
+    }
+
+    public void setRespiracao(String respiracao) {
+        this.respiracao = respiracao;
+    }
+
+    public String getLocomocao() {
+        return locomocao;
+    }
+
+    public void setLocomocao(String locomocao) {
+        this.locomocao = locomocao;
+    }
+
+    public SeresVivos(String celula, String materialGenetico, String metabolismo, String nutricao, String reproducao, String respiracao, String locomocao) {
         this.celula = celula;
         this.materialGenetico = materialGenetico;
         this.metabolismo = metabolismo;
         this.nutricao = nutricao;
         this.reproducao = reproducao;
+        this.respiracao = respiracao;
+        this.locomocao = locomocao;
     }
 
     public SeresVivos() {
@@ -70,10 +92,6 @@ public class SeresVivos {
         int opc = 0;
         System.out.println("============ CLASIFICAÇÃO DE SERES VIVOS =============\n");
         System.out.print(
-                "\"são as unidades funcionais e estruturais dos seres vivos, estando presentes em todos os organismos vivos, " +
-                "com exceção dos vírus. De uma maneira simplificada, podemos dizer que as células apresentam membrana plasmática, " +
-                "citoplasma e material genético. Esse material genético pode estar disperso no citoplasma células procariontes " +
-                "ou ser delimitado por uma membrana célula eucariótica" +
                 "\"Os organismos formados por apenas uma célula são chamados de unicelulares, " +
                 "e aqueles formados por várias células são chamados de multicelulares.\"\n\n" +
                 "Informe se o organismo é unicelular ou multicelular:\n" +
@@ -150,6 +168,43 @@ public class SeresVivos {
                 System.out.println("Opção inválida!!!");
         }
         System.out.println(getNutricao());
+
+        System.out.print(
+                "Respiração. Aeróbia (necessitan oxigênio) ou anaeróbia (não utilizan oxigênio).\n" +
+                        "Digite 1 - Aeróbico\n" +
+                        "Digite 2 - Anaeróbico\n" +
+                        "Digite: ");
+
+        opc = scan.nextInt();
+        switch (opc){
+            case 1:
+                setRespiracao("Aeróbico");
+                break;
+            case 2:
+                setRespiracao("Anaeróbico");
+                break;
+            default:
+                System.out.println("Opção inválida!!!");
+        }
+
+        System.out.println(getRespiracao());
+
+        System.out.println("Locomoção. Autônoma ou imóvel.\n" +
+                "Digite 1 - Autônoma\n" +
+                "Digite 2 - Imóvel\n" +
+                "Opção: ");
+        opc = scan.nextInt();
+        switch (opc){
+            case 1:
+                setLocomocao("Autônoma");
+                break;
+            case 2:
+                setLocomocao("Imóvel");
+                break;
+            default:
+                System.out.println("Opção inválida!!!");
+        }
+        System.out.println(getLocomocao());
     }
 
 }
