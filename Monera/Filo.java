@@ -1,7 +1,10 @@
 package Monera;
 
+import java.util.Scanner;
+
 public class Filo {
 	
+	Scanner scan = new Scanner(System.in);
 	private String filo;
 
 	public String getFilo() {
@@ -12,5 +15,11 @@ public class Filo {
 		this.filo = filo;
 	}
 	
+	public void Cadastro() {
+		
+		System.out.println("Digite o Filo: ");
+		setFilo(scan.nextLine());
+		
+	}
 
 }

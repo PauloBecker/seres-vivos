@@ -12,6 +12,13 @@ public class Genero extends Familia {
 		this.genero = genero;
 	}
 	
+	@Override
+	public void Cadastro() {
+		
+		System.out.println("Digite o Genêro: ");
+		setGenero(scan.nextLine());
+		
+	}
 	
 
 }
