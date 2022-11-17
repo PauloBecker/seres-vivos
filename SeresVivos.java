@@ -70,8 +70,15 @@ public class SeresVivos {
         int opc = 0;
 
 
-        System.out.println("============ CLASIFICAÇÃO DE SERES VIVOS =============");
-        System.out.print("Informe se o organismo é unicelular ou multicelular:\n" +
+        System.out.println("============ CLASIFICAÇÃO DE SERES VIVOS =============\n");
+        System.out.print(
+                "\"são as unidades funcionais e estruturais dos seres vivos, estando presentes em todos os organismos vivos, " +
+                "com exceção dos vírus. De uma maneira simplificada, podemos dizer que as células apresentam membrana plasmática, " +
+                "citoplasma e material genético. Esse material genético pode estar disperso no citoplasma células procariontes " +
+                "ou ser delimitado por uma membrana célula eucariótica" +
+                "\"Os organismos formados por apenas uma célula são chamados de unicelulares, " +
+                "e aqueles formados por várias células são chamados de multicelulares.\"\n\n" +
+                "Informe se o organismo é unicelular ou multicelular:\n" +
                 "Digite 1 - Unicelular \n" +
                 "Digite 2 - Multicelular \n" +
                 "Opção: ");
@@ -88,7 +95,11 @@ public class SeresVivos {
 
         }
         System.out.println(getCelula());
-        System.out.print("Quanto ao material genético informe:\n" +
+        System.out.print(
+                "\"Todos os seres vivos apresentam material genético, o qual é responsável por transmitir as características de um ser vivo para a próxima geração " +
+                "(hereditariedade) e controlar as atividades que serão realizadas pela célula. O material genético é formado por um ou dois tipos de" +
+                        "ácidos nucleicos (DNA e RNA).\"\n" +
+                "\n" +
                 "Digite 1 - DNA \n" +
                 "Digite 2 - RNA \n" +
                 "Opção: ");
