@@ -19,23 +19,7 @@ public class SeresVivos {
 
     private String locomocao;
 
-    public String getRespiracao() {
-        return respiracao;
-    }
-
-    public void setRespiracao(String respiracao) {
-        this.respiracao = respiracao;
-    }
-
-    public String getLocomocao() {
-        return locomocao;
-    }
-
-    public void setLocomocao(String locomocao) {
-        this.locomocao = locomocao;
-    }
-
-    public SeresVivos(String celula, String materialGenetico, String metabolismo, String nutricao, String reproducao, String respiracao, String locomocao) {
+   public SeresVivos(String celula, String materialGenetico, String metabolismo, String nutricao, String reproducao, String respiracao, String locomocao) {
         this.celula = celula;
         this.materialGenetico = materialGenetico;
         this.metabolismo = metabolismo;
@@ -44,7 +28,8 @@ public class SeresVivos {
         this.respiracao = respiracao;
         this.locomocao = locomocao;
     }
-
+   
+   
     public SeresVivos() {
 
     }
@@ -87,6 +72,22 @@ public class SeresVivos {
 
     public void setReproducao(String reproducao) {
         this.reproducao = reproducao;
+    }
+    
+    public String getRespiracao() {
+        return respiracao;
+    }
+
+    public void setRespiracao(String respiracao) {
+        this.respiracao = respiracao;
+    }
+
+    public String getLocomocao() {
+        return locomocao;
+    }
+
+    public void setLocomocao(String locomocao) {
+        this.locomocao = locomocao;
     }
 
 

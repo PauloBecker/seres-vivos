@@ -1,6 +1,7 @@
 /.classpath
 /.idea/
 /.project
+<<<<<<< HEAD
 /Animalia/
 /Fungi/
 /Main.class
@@ -15,3 +16,18 @@
 /Main2.class
 /SeresVivos2.class
 /SeresVivos/
+=======
+/Animalia.class
+/Fungi.class
+/Main.class
+/Monera.class
+/Plantae.class
+/Protista.class
+/SeresVivos.class
+/out/
+/Animalia/
+/Fungi/
+/Monera/
+/Plantae/
+/Protista/
+>>>>>>> d88a1663898cf5781b5bc37baa422b3c8ce10bf9
