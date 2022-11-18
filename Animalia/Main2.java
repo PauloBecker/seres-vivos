@@ -22,24 +22,18 @@ public class Main2 {
 		ArrayList<AnimaliaEspecie> protozoa = new ArrayList<>();
 		
 		Scanner scan = new Scanner(System.in);
-		String continua = "sim";
+		int choice;
+		int operacao;
 		
 		do {
-			System.out.println("Informe a operacao que deseja realizar");
-			System.out.println("Digite 1 Cadastrar Especie");
-			System.out.println("Digite 2 exibir Especies cadastradas");
-			int operacao = scan.nextInt();
+			System.out.println("Informe a operacao (1-Cadastrar   2-Exibir   3-Sair): ");
+			operacao = scan.nextInt();
 			
 			if(operacao == 1) {
 				
-				System.out.println("Informe o ser vivo que deseja cadastrar");
-				System.out.println("Digite 1 para Animalia");
-				System.out.println("Digite 2 para Plantae");
-				System.out.println("Digite 3 para Fungi");
-				System.out.println("Digite 4 para Monera");
-				System.out.println("Digite 5 para Protozoa");
-				
-				int choice = scan.nextInt();
+				System.out.println("Informe o ser vivo que deseja cadastrar: ");
+				System.out.println("1-Animalia   2-Plantae  3-Fungi  4-Monera   5-Protozoa: ");
+				choice = scan.nextInt();
 				
 				switch(choice) {
 				case 1:
@@ -67,17 +61,34 @@ public class Main2 {
 					protozoaAux.setDados("Protozoa");
 					protozoa.add(protozoaAux);
 					break;
+				default:
+					System.out.println("Reino inválido.");
 				}
-			}else {
-				System.out.println(animalia.toString());
-				System.out.println(plantae.toString());
-				System.out.println(fungi.toString());
-				System.out.println(monera.toString());
-				System.out.println(protozoa.toString());
+			}else if (operacao == 2) {
+				System.out.println("Informe a lista do ser vivo que deseja visualizar: ");
+				System.out.println("1-Animalia   2-Plantae  3-Fungi  4-Monera   5-Protozoa: ");
+				choice = scan.nextInt();
+				
+				switch(choice) {
+				case 1:
+					System.out.println(animalia.toString());
+					break;
+				case 2:
+					System.out.println(plantae.toString());
+					break;
+				case 3:
+					System.out.println(fungi.toString());
+					break;
+				case 4:
+					System.out.println(monera.toString());
+					break;
+				case 5:
+					System.out.println(protozoa.toString());
+					break;
+				default:
+					System.out.println("Reino inválido.");
+				}
 			}
-			System.out.println("Deseja fazer uma nova operacao?");
-			continua = scan.next();
-		}while(continua.equalsIgnoreCase("sim"));
+		}while (operacao != 3);
 	}
-
 }

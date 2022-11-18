@@ -18,6 +18,8 @@ public class SeresVivos {
     private String respiracao;
 
     private String locomocao;
+    
+    private String nomePopular;
 
     public String getRespiracao() {
         return respiracao;
@@ -27,7 +29,15 @@ public class SeresVivos {
         this.respiracao = respiracao;
     }
 
-    public String getLocomocao() {
+    public String getNomePopular() {
+		return nomePopular;
+	}
+
+	public void setNomePopular(String nomePopular) {
+		this.nomePopular = nomePopular;
+	}
+
+	public String getLocomocao() {
         return locomocao;
     }
 
