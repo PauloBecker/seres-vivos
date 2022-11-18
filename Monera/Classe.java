@@ -3,7 +3,7 @@ package Monera;
 public class Classe extends Filo {
 	
 	private String classe;
-
+	
 	public String getClasse() {
 		return classe;
 	}
@@ -19,10 +19,6 @@ public class Classe extends Filo {
 		setClasse(scan.nextLine());
 		
 	}
-	
-	
-	
-
 	
 
 }

@@ -47,7 +47,7 @@ public class Main {
 				System.out.println("Digite o nome da Genero:");
 				String genero = scan.next();
 				
-				System.out.println("Digite o nome da Familia:");
+				System.out.println("Digite o nome da Família:");
 				String familia = scan.next();
 				
 				System.out.println("Digite o nome da Ordem:");
