@@ -6,17 +6,11 @@ import java.util.Scanner;
 public class SeresVivos {
     Scanner scan = new Scanner(System.in);
     private String celula;
-
     private String materialGenetico;
-
     private String metabolismo;
-
     private String nutricao;
-
     private String reproducao;
-
     private String respiracao;
-
     private String locomocao;
 
    public SeresVivos(String celula, String materialGenetico, String metabolismo, String nutricao, String reproducao, String respiracao, String locomocao) {
@@ -28,8 +22,7 @@ public class SeresVivos {
         this.respiracao = respiracao;
         this.locomocao = locomocao;
     }
-   
-   
+
     public SeresVivos() {
 
     }
@@ -88,6 +81,41 @@ public class SeresVivos {
 
     public void setLocomocao(String locomocao) {
         this.locomocao = locomocao;
+    }
+
+    public void escolhaReino(){
+
+       int opc = 0;
+        System.out.println("============ ESCOLHA O REINO ANIMAL ============");
+
+        System.out.println(
+                "Digite 1 - Monera: \n" +
+                "Digite 2 - Protista: \n" +
+                "Digite 3 - Fungi: \n" +
+                        "Digite 4 - Plantae: \n" +
+                        "Digite 5 - Animalia: \n" +
+                        "Opção: ");
+
+        opc = scan.nextInt();
+        switch (opc){
+            case 1:
+                entradaDeDados();
+                break;
+            case 2:
+                entradaDeDados();
+                break;
+            case 3:
+                entradaDeDados();
+                break;
+            case 4:
+                entradaDeDados();
+                break;
+            case 5:
+                entradaDeDados();
+                break;
+            default:
+                System.out.println("Opção inválida!!!");
+        }
     }
 
 
