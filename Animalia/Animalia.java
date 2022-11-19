@@ -1,5 +1,7 @@
 package Animalia;
 
+//import SeresVivos;
+
 public class Animalia extends SeresVivos{
 	
 		String NomeAnimalia;

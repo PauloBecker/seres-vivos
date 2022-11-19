@@ -2,13 +2,5 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path=""/>
-<<<<<<< HEAD
 	<classpathentry kind="output" path="out/production/seres-vivos"/>
-=======
-<<<<<<< HEAD
-	<classpathentry kind="output" path=""/>
-=======
-	<classpathentry kind="output" path="out/production/seres-vivos"/>
->>>>>>> 744d35934c3b4de8832c03041f1a5629b46b5c8d
->>>>>>> d88a1663898cf5781b5bc37baa422b3c8ce10bf9
 </classpath>
