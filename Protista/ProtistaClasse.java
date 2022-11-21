@@ -10,6 +10,10 @@ public class ProtistaClasse extends ProtistaFilo{
         this.classeProtista = classeProtista;
     }
 
+    public ProtistaClasse() {
+        super();
+    }
+
     public String getClasseProtista() {
         return classeProtista;
     }

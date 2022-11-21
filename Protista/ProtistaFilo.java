@@ -17,6 +17,11 @@ public class ProtistaFilo extends Protista {
         this.nomeFiloProtista = nomeFiloProtista;
     }
 
+    public ProtistaFilo() {
+        super();
+    }
+
+
     public String getNomeFiloProtista() {
         return nomeFiloProtista;
     }

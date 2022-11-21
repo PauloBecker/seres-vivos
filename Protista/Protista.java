@@ -12,6 +12,10 @@ public class Protista extends SeresVivos {
         this.nomeReinoProtista = nomeReinoProtista;
     }
 
+    public Protista() {
+
+    }
+
     public String getNomeReinoProtista() {
         return nomeReinoProtista;
     }

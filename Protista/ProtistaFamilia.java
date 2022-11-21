@@ -7,8 +7,8 @@ public class ProtistaFamilia extends ProtistaOrdem{
     public ProtistaFamilia() {
     }
 
-    public ProtistaFamilia(String filoProtista, String classeProtista, String ordemProtista, String familiaProtista) {
-        super(filoProtista, classeProtista, ordemProtista);
+    public ProtistaFamilia(String celula, String materialGenetico, String metabolismo, String nutricao, String reproducao, String respiracao, String locomocao, String nomeReinoProtista, String nomeFiloProtista, String classeProtista, String ordemProtista, String familiaProtista) {
+        super(celula, materialGenetico, metabolismo, nutricao, reproducao, respiracao, locomocao, nomeReinoProtista, nomeFiloProtista, classeProtista, ordemProtista);
         this.familiaProtista = familiaProtista;
     }
 
