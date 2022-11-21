@@ -11,15 +11,5 @@ public class Ordem extends Classe {
 	public void setOrdem(String ordem) {
 		this.ordem = ordem;
 	}
-	
-	@Override
-	public void Cadastro() {
-		
-		System.out.println("Digite a Ordem: ");
-		setOrdem(scan.nextLine());
-		
-	}
-	
-	
 
 }

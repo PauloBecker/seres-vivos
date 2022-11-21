@@ -10,9 +10,8 @@ public class Main {
 
         animalia1.entradaDeDados();
 
-        FungiFilo filo = new FungiFilo();
-
-        filo.classificar();
+       
+        
 
     }
 }
