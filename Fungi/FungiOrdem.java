@@ -1,6 +1,6 @@
 package Fungi;
 
-public class Ordem extends Classe {
+public class FungiOrdem extends FungiClasse {
 
     private String ordem;
 

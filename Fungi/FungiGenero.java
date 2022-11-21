@@ -1,6 +1,6 @@
 package Fungi;
 
-public class Genero extends Familia {
+public class FungiGenero extends FungiFamilia {
 
     private String genero;
 

@@ -1,7 +1,7 @@
-package Monera;
+package Fungi;
 
-public class Familia extends Ordem {
-	
+public class FungiFamilia extends FungiOrdem {
+
 	private String familia;
 
 	public String getFamilia() {

@@ -1,6 +1,6 @@
 package Fungi;
 
-public class FungiEspecie extends Genero {
+public class FungiEspecie extends FungiGenero {
 
     private String especie;
 
@@ -40,23 +40,23 @@ public class FungiEspecie extends Genero {
 		System.out.println("Tipo de metabolismo (Via degradativa ou Via biossintética): ");
 		this.setMetabolismo(scan.next());
 		
-		System.out.println("Nome da Especie:");
-		this.setEspecie(scan.next());
-		
-		System.out.println("Nome da Genero:");
-		this.setGenero(scan.next());
-				
-		System.out.println("Nome da Familia:");
-		this.setFamilia(scan.next());
-		
-		System.out.println("Nome da Ordem:");
-		this.setOrdem(scan.next());
+		System.out.println("Nome da Filo:");
+		this.setFilo(scan.next());
 		
 		System.out.println("Nome da Classe:");
 		this.setClasse(scan.next());
 		
-		System.out.println("Nome da Filo:");
-		this.setFilo(scan.next());
+		System.out.println("Nome da Ordem:");
+		this.setOrdem(scan.next());
+		
+		System.out.println("Nome da Familia:");
+		this.setFamilia(scan.next());
+		
+		System.out.println("Nome da Genero:");
+		this.setGenero(scan.next());	
+		
+		System.out.println("Nome da Especie:");
+		this.setEspecie(scan.next());
 	}
 	
     @Override

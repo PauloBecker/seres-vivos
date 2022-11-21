@@ -2,16 +2,16 @@ package Monera;
 
 import java.util.Scanner;
 
-public class Filo extends Monera {
+public class MoneraFilo extends Monera {
 	
 	Scanner scan = new Scanner(System.in);
 	private String filo;
 	
-	public Filo() {
+	public MoneraFilo() {
 		super();
 	}
 
-	public Filo(String filo) {
+	public MoneraFilo(String filo) {
 		super();
 		this.filo = filo;
 	}

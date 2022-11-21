@@ -2,16 +2,16 @@ package Fungi;
 
 import java.util.Scanner;
 
-public class Filo extends Fungi {
+public class FungiFilo extends Fungi {
 
     Scanner scan = new Scanner(System.in);
     private String filo;
 
-    public Filo() {
+    public FungiFilo() {
         super();
     }
 
-    public Filo(String filo) {
+    public FungiFilo(String filo) {
         super();
         this.filo = filo;
     }

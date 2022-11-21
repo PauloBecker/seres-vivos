@@ -1,8 +1,8 @@
+// Feito por Helena; 
+
 package Fungi;
 
 import SeresVivos.SeresVivos;
-
-//import SeresVivos;
 
 public class Fungi extends SeresVivos {
 	
