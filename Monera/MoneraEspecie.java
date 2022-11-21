@@ -12,6 +12,7 @@ public class MoneraEspecie extends MoneraGenero {
 		this.especie = especie;
 	}
 	
+	@Override
 	public void setDados(String nmReino) {
 		
 		this.setNomeMonera(nmReino);

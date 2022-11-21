@@ -5,16 +5,7 @@ public class ProtistaClasse extends ProtistaFilo{
     private String classeProtista;
 
 
-    public ProtistaClasse(String celula, String materialGenetico, String metabolismo, String nutricao, String reproducao, String respiracao, String locomocao, String nomeReinoProtista, String nomeFiloProtista, String classeProtista) {
-        super(celula, materialGenetico, metabolismo, nutricao, reproducao, respiracao, locomocao, nomeReinoProtista, nomeFiloProtista);
-        this.classeProtista = classeProtista;
-    }
-
-    public ProtistaClasse() {
-        super();
-    }
-
-    public String getClasseProtista() {
+   public String getClasseProtista() {
         return classeProtista;
     }
     public void setClasseProtista(String classeProtista) {

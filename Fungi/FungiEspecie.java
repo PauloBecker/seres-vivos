@@ -11,7 +11,8 @@ public class FungiEspecie extends FungiGenero {
     public void setEspecie(String especie) {
         this.especie = especie;
     }
-
+    
+    @Override
 	public void setDados(String nmReino) {
 		
 		this.setNomeFungi(nmReino);

@@ -20,8 +20,44 @@ public class SeresVivos {
     private String locomocao;
     
     private String nomePopular;
+    
+    private String reino;
+    
+    private String filo;
+    
+    private String classe;
+    
+    private String ordem;
+    
+    private String familia;
+    
+    private String genero;
+    
+    private String especie;
+    
+    
+    public SeresVivos(String celula, String materialGenetico, String metabolismo, String nutricao, String reproducao,
+			String respiracao, String locomocao, String nomePopular, String reino, String filo, String classe,
+			String ordem, String familia, String genero, String especie) {
+		super();
+		this.celula = celula;
+		this.materialGenetico = materialGenetico;
+		this.metabolismo = metabolismo;
+		this.nutricao = nutricao;
+		this.reproducao = reproducao;
+		this.respiracao = respiracao;
+		this.locomocao = locomocao;
+		this.nomePopular = nomePopular;
+		this.reino = reino;
+		this.filo = filo;
+		this.classe = classe;
+		this.ordem = ordem;
+		this.familia = familia;
+		this.genero = genero;
+		this.especie = especie;
+	}
 
-    public String getRespiracao() {
+	public String getRespiracao() {
         return respiracao;
     }
 
@@ -42,16 +78,6 @@ public class SeresVivos {
     }
 
     public void setLocomocao(String locomocao) {
-        this.locomocao = locomocao;
-    }
-
-    public SeresVivos(String celula, String materialGenetico, String metabolismo, String nutricao, String reproducao, String respiracao, String locomocao) {
-        this.celula = celula;
-        this.materialGenetico = materialGenetico;
-        this.metabolismo = metabolismo;
-        this.nutricao = nutricao;
-        this.reproducao = reproducao;
-        this.respiracao = respiracao;
         this.locomocao = locomocao;
     }
 
@@ -98,130 +124,165 @@ public class SeresVivos {
     public void setReproducao(String reproducao) {
         this.reproducao = reproducao;
     }
+    
+    
+	public String getReino() {
+		return reino;
+	}
 
+	public void setReino(String reino) {
+		this.reino = reino;
+	}
 
-    public void entradaDeDados(){
+	public String getFilo() {
+		return filo;
+	}
 
-        int opc = 0;
-        System.out.println("============ CLASIFICAÇÃO DE SERES VIVOS =============\n");
-        System.out.print(
-                "\"Os organismos formados por apenas uma célula são chamados de unicelulares, " +
-                "e aqueles formados por várias células são chamados de multicelulares.\"\n\n" +
-                "Informe se o organismo é unicelular ou multicelular:\n" +
-                "Digite 1 - Unicelular \n" +
-                "Digite 2 - Multicelular \n" +
-                "Opção: ");
-        opc = scan.nextInt();
-        switch (opc){
-            case 1:
-                setCelula("Unicelular");
-                break;
-            case 2:
-                setCelula("Multicelular");
-                break;
-            default:
-                System.out.println("Opção inválida!!!");
+	public void setFilo(String filo) {
+		this.filo = filo;
+	}
 
-        }
-        
-        System.out.println(getCelula());
-        System.out.print(
-                "\"Todos os seres vivos apresentam material genético, o qual é responsável por transmitir as características de um ser vivo para a próxima geração " +
-                "(hereditariedade) e controlar as atividades que serão realizadas pela célula. O material genético é formado por um ou dois tipos de" +
-                        "ácidos nucleicos (DNA e RNA).\"\n" +
-                "\n" +
-                "Digite 1 - DNA \n" +
-                "Digite 2 - RNA \n" +
-                "Opção: ");
-        opc = scan.nextInt();
-        switch (opc){
-            case 1 :
-                setMaterialGenetico("DNA");
-                break;
-            case 2:
-                setMaterialGenetico("RNA");
-                break;
-            default:
-                System.out.println("Opção inválida!!!");
-        }
-        System.out.println(getMaterialGenetico());
+	public String getClasse() {
+		return classe;
+	}
 
-        System.out.print(
-                    "Os organismos vivos podem ser divididos, a partir do critério de nutrição, em autotróficos e heterotróficos.\n" +
-                    "Digite 1 - Autotróficos\n" +
-                    "Digite 2 - Heterotrófico \n" +
-                    "Opção: ");
-        opc = scan.nextInt();
-        switch (opc){
-            case 1:
-                setNutricao("Autotróficos");
-                break;
-            case 2:
-                setNutricao("Heterotrófico");
-                break;
-            default:
-                System.out.println("Opção inválida!!!");
-        }
-        System.out.println(getNutricao());
+	public void setClasse(String classe) {
+		this.classe = classe;
+	}
 
-        System.out.print(
-                "Os seres vivos são capazes de reproduzir-se, ou seja, produzir descendentes.\n " +
-                "A reprodução pode ocorrer de forma sexuada ou de maneira Assexuada\n" +
-                "Digite 1 - Sexuada\n" +
-                "Digite 2 - Assexuada\n" +
-                "Opção: ");
-        opc = scan.nextInt();
-        switch (opc){
-            case 1:
-                setReproducao("Sexuada");
-                break;
-            case 2:
-                setReproducao("Assexuada");
-                break;
-            default:
-                System.out.println("Opção inválida!!!");
-        }
-        System.out.println(getNutricao());
+	public String getOrdem() {
+		return ordem;
+	}
 
-        System.out.print(
-                "Respiração. Aeróbia (necessitan oxigênio) ou anaeróbia (não utilizan oxigênio).\n" +
-                        "Digite 1 - Aeróbico\n" +
-                        "Digite 2 - Anaeróbico\n" +
-                        "Digite: ");
+	public void setOrdem(String ordem) {
+		this.ordem = ordem;
+	}
 
-        opc = scan.nextInt();
-        switch (opc){
-            case 1:
-                setRespiracao("Aeróbico");
-                break;
-            case 2:
-                setRespiracao("Anaeróbico");
-                break;
-            default:
-                System.out.println("Opção inválida!!!");
-        }
+	public String getFamilia() {
+		return familia;
+	}
 
-        System.out.println(getRespiracao());
+	public void setFamilia(String familia) {
+		this.familia = familia;
+	}
 
-        System.out.println("Locomoção. Autônoma ou imóvel.\n" +
-                "Digite 1 - Autônoma\n" +
-                "Digite 2 - Imóvel\n" +
-                "Opção: ");
-        opc = scan.nextInt();
-        switch (opc){
-            case 1:
-                setLocomocao("Autônoma");
-                break;
-            case 2:
-                setLocomocao("Imóvel");
-                break;
-            default:
-                System.out.println("Opção inválida!!!");
-        }
-        System.out.println(getLocomocao());
-    }
+	public String getGenero() {
+		return genero;
+	}
 
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+
+	public String getEspecie() {
+		return especie;
+	}
+
+	public void setEspecie(String especie) {
+		this.especie = especie;
+	}
+
+	public void setDados(String nmReino) {
+		
+		this.setReino(nmReino);
+		
+		System.out.println("Nome Popular: ");
+		this.setNomePopular(scan.next());
+		
+		System.out.println("Tipo de organismo (Unicelular ou Multicelular): ");
+		this.setCelula(scan.next());
+		
+		System.out.println("Tipo de material genético (DNA ou RNA): ");
+		this.setMaterialGenetico(scan.next());
+		
+		System.out.println("Critério de nutrição (Autotróficos ou Heterotróficos: ");
+		this.setNutricao(scan.next());
+		
+		System.out.println("Tipo de reprodução (Sexuada ou Assexuada): ");
+		this.setReproducao(scan.next());
+		
+		System.out.println("Tipo de respiração (Aeróbia ou Anaeróbia: ");
+		this.setRespiracao(scan.next());
+		
+		System.out.println("Tipo de locomoção (Autônoma ou Imóvel: ");
+		this.setLocomocao(scan.next());
+		
+		System.out.println("Tipo de metabolismo (Via degradativa ou Via biossintética): ");
+		this.setMetabolismo(scan.next());
+		
+		System.out.println("Nome da Filo:");
+		this.setFilo(scan.next());
+		
+		System.out.println("Nome da Classe:");
+		this.setClasse(scan.next());
+		
+		System.out.println("Nome da Ordem:");
+		this.setOrdem(scan.next());
+		
+		System.out.println("Nome da Familia:");
+		this.setFamilia(scan.next());
+		
+		System.out.println("Nome da Genero:");
+		this.setGenero(scan.next());	
+		
+		System.out.println("Nome da Especie:");
+		this.setEspecie(scan.next());
+				
+	}
+	
+    
+	public String toString() {
+		
+		StringBuffer stringBuffer = new StringBuffer();
+		stringBuffer.append("\nReino: ");
+		stringBuffer.append(this.getReino());
+		
+		stringBuffer.append("\nNome Popular: ");
+		stringBuffer.append(this.getNomePopular());
+		
+		stringBuffer.append("\nTipo de organismo: ");
+		stringBuffer.append(this.getCelula());
+		
+		stringBuffer.append("\nTipo de material genético: ");
+		stringBuffer.append(this.getMaterialGenetico());
+		
+		stringBuffer.append("\nCritério de nutrição: ");
+		stringBuffer.append(this.getNutricao());
+		
+		stringBuffer.append("\nTipo de reprodução: ");
+		stringBuffer.append(this.getReproducao());
+		
+		stringBuffer.append("\nTipo de respiração: ");
+		stringBuffer.append(this.getRespiracao());
+		
+		stringBuffer.append("\nTipo de locomoção: ");
+		stringBuffer.append(this.getLocomocao());
+		
+		stringBuffer.append("\nTipo de metabolismo: ");
+		stringBuffer.append(this.getMetabolismo());
+		
+		stringBuffer.append("\nFilo: ");
+		stringBuffer.append(this.getFilo());
+		
+		stringBuffer.append("\nClasse: ");
+		stringBuffer.append(this.getClasse());
+		
+		stringBuffer.append("\nOrdem: ");
+		stringBuffer.append(this.getOrdem());
+		
+		stringBuffer.append("\nFamilia: ");
+		stringBuffer.append(this.getFamilia());
+		
+		stringBuffer.append("\nGenero: ");
+		stringBuffer.append(this.getGenero());
+		
+		stringBuffer.append("\nEspecie: ");
+		stringBuffer.append(this.getEspecie());
+		
+		return stringBuffer.toString();
+	}
 }
+
 
 
 

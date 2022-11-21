@@ -21,7 +21,7 @@ public class AnimaliaEspecie extends AnimaliaGenero{
 		NomeAnimaliaEspecie = nomeAnimaliaEspecie;
 	}
 			
-	// Permite a entrada de todos os dados do ser vivo através desta herança
+	@Override
 	public void setDados(String nmReino) {
 		
 		this.setNomeAnimalia(nmReino);

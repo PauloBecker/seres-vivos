@@ -4,15 +4,6 @@ public class ProtistaOrdem extends ProtistaClasse{
 
     private String ordemProtista;
 
-    public ProtistaOrdem() {
-        super();
-    }
-
-    public ProtistaOrdem(String celula, String materialGenetico, String metabolismo, String nutricao, String reproducao, String respiracao, String locomocao, String nomeReinoProtista, String nomeFiloProtista, String classeProtista, String ordemProtista) {
-        super(celula, materialGenetico, metabolismo, nutricao, reproducao, respiracao, locomocao, nomeReinoProtista, nomeFiloProtista, classeProtista);
-        this.ordemProtista = ordemProtista;
-    }
-
     public String getOrdemProtista() {
         return ordemProtista;
     }

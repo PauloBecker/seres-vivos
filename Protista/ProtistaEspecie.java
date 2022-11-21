@@ -7,14 +7,6 @@ public class ProtistaEspecie extends ProtistaGenero{
     Scanner scan = new Scanner(System.in);
     private String especieProtista;
 
-    public ProtistaEspecie() {
-    }
-
-    public ProtistaEspecie(String filoProtista, String classeProtista, String ordemProtista, String familiaProtista, String generoProtista, String especieProtista) {
-        super(filoProtista, classeProtista, ordemProtista, familiaProtista, generoProtista);
-        this.especieProtista = especieProtista;
-    }
-
     public String getEspecieProtista() {
         return especieProtista;
     }
@@ -23,9 +15,34 @@ public class ProtistaEspecie extends ProtistaGenero{
         this.especieProtista = especieProtista;
     }
 
+    @Override
     public void setDados(String nmReino) {
 
         this.setNomeReinoProtista(nmReino);
+        
+		System.out.println("Nome Popular: ");
+		this.setNomePopular(scan.next());
+		
+		System.out.println("Tipo de organismo (Unicelular ou Multicelular): ");
+		this.setCelula(scan.next());
+		
+		System.out.println("Tipo de material genético (DNA ou RNA): ");
+		this.setMaterialGenetico(scan.next());
+		
+		System.out.println("Critério de nutrição (Autotróficos ou Heterotróficos: ");
+		this.setNutricao(scan.next());
+		
+		System.out.println("Tipo de reprodução (Sexuada ou Assexuada): ");
+		this.setReproducao(scan.next());
+		
+		System.out.println("Tipo de respiração (Aeróbia ou Anaeróbia: ");
+		this.setRespiracao(scan.next());
+		
+		System.out.println("Tipo de locomoção (Autônoma ou Imóvel: ");
+		this.setLocomocao(scan.next());
+		
+		System.out.println("Tipo de metabolismo (Via degradativa ou Via biossintética): ");
+		this.setMetabolismo(scan.next());
 
         System.out.println("Nome da Especie:");
         this.setEspecieProtista(scan.next());

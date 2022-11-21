@@ -23,6 +23,7 @@ public class PlantaeEspecie extends PlantaeGenero{
 		this.nomeEspecie = nomeEspecie;
 	}
 	
+	 @Override
 	public void setDados(String nmReino) {
 		
 		this.setNome(nmReino);
