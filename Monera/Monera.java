@@ -1,8 +1,8 @@
 package Monera;
 
-import seresvivos.SeresVivosOld;
+import SeresVivos.SeresVivos;
 
-public class Monera extends SeresVivosOld {
+public class Monera extends SeresVivos{
 		
 	String nomeMonera;
 		

@@ -1,4 +1,4 @@
-package seresvivos;
+package SeresVivos;
 
 import java.util.Scanner;
 

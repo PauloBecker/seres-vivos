@@ -1,8 +1,8 @@
 package Protista;
 
-import seresvivos.SeresVivosOld;
+import SeresVivos.SeresVivos;
 
-public class Protista extends SeresVivosOld {
+public class Protista extends SeresVivos {
 
     private String nomeReinoProtista;
 

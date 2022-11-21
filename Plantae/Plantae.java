@@ -2,9 +2,9 @@
 
 package Plantae;
 
-import seresvivos.SeresVivosOld;
+import SeresVivos.SeresVivos;
 
-public class Plantae extends SeresVivosOld {
+public class Plantae extends SeresVivos{
 	
 	String nomeReino = "Plantae";
 	

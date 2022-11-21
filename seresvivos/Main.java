@@ -1,7 +1,9 @@
-//Composto por 2 menus para cadastro e visualização de dados de SeresVivos em estruturas ArrayList
-//Serão instanciadas 5 listas para cadastro individual de cada reino
-
-package seresvivos;
+//Classe AnimaliaEspecie
+//Herda as classes SeresVivos, AnimaliaFilo, AnimaliaClasse, AnimaliaOrdem, AnimaliaFamilia, AnimaliaGenero
+//Possui 2 metodos principais: SetDados() e toSring()
+// 1) SetDados() - Permite a entrada de todos os dados do ser vivo através desta herança
+// 2) toString - Imprime todos os dados da ArrayList desejada (@Override)
+package SeresVivos;
 
 import java.util.ArrayList;
 import java.util.Scanner;

@@ -1,10 +1,10 @@
 package Fungi;
 
-import seresvivos.SeresVivosOld;
+import SeresVivos.SeresVivos;
 
 //import SeresVivos;
 
-public class Fungi extends SeresVivosOld {
+public class Fungi extends SeresVivos {
 	
 	String nomeFungi;
 	
