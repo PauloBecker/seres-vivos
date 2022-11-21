@@ -2,7 +2,7 @@ package Fungi;
 
 import java.util.Scanner;
 
-public class Filo {
+public class Filo extends Fungi {
 
     Scanner scan = new Scanner(System.in);
     private String filo;
@@ -24,10 +24,4 @@ public class Filo {
         this.filo = filo;
     }
 
-    public void Cadastro() {
-
-        System.out.println("Digite o Filo: ");
-        setFilo(scan.nextLine());
-
-    }
 }
