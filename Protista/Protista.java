@@ -1,8 +1,8 @@
 package Protista;
 
-import SeresVivos.SeresVivos;
+import seresvivos.SeresVivosOld;
 
-public class Protista extends SeresVivos {
+public class Protista extends SeresVivosOld {
 
     private String nomeReinoProtista;
 
@@ -10,6 +10,10 @@ public class Protista extends SeresVivos {
     public Protista(String celula, String materialGenetico, String metabolismo, String nutricao, String reproducao, String respiracao, String locomocao, String nomeReinoProtista) {
         super(celula, materialGenetico, metabolismo, nutricao, reproducao, respiracao, locomocao);
         this.nomeReinoProtista = nomeReinoProtista;
+    }
+
+    public Protista() {
+
     }
 
     public String getNomeReinoProtista() {

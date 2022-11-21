@@ -1,9 +1,5 @@
 package Protista;
 
-import SeresVivos.SeresVivos;
-
-import java.util.Scanner;
-
 public class ProtistaFilo extends Protista {
 
     private String nomeFiloProtista;
@@ -16,6 +12,11 @@ public class ProtistaFilo extends Protista {
         super(celula, materialGenetico, metabolismo, nutricao, reproducao, respiracao, locomocao, nomeReinoProtista);
         this.nomeFiloProtista = nomeFiloProtista;
     }
+
+    public ProtistaFilo() {
+        super();
+    }
+
 
     public String getNomeFiloProtista() {
         return nomeFiloProtista;
