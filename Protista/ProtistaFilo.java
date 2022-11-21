@@ -1,9 +1,5 @@
 package Protista;
 
-import SeresVivos.SeresVivos;
-
-import java.util.Scanner;
-
 public class ProtistaFilo extends Protista {
 
     private String nomeFiloProtista;

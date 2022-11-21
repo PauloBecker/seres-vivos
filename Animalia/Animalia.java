@@ -1,8 +1,8 @@
 package Animalia;
 
-import SeresVivos.SeresVivos;
+import seresvivos.SeresVivosOld;
 
-public class Animalia extends SeresVivos{
+public class Animalia extends SeresVivosOld {
 	
 		String NomeAnimalia;
 	

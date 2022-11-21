@@ -1,8 +1,8 @@
-package SeresVivos;
+package seresvivos;
 
 import Animalia.AnimaliaEspecie;
 
-public class Main {
+public class MainOld {
 
     public static void main(String[] args) {
 

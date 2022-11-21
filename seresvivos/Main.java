@@ -1,7 +1,7 @@
 //Composto por 2 menus para cadastro e visualização de dados de SeresVivos em estruturas ArrayList
 //Serão instanciadas 5 listas para cadastro individual de cada reino
 
-package SeresVivos;
+package seresvivos;
 
 import java.util.ArrayList;
 import java.util.Scanner;

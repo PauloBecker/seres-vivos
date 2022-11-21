@@ -1,10 +1,10 @@
-package SeresVivos;
+package seresvivos;
+
 
 import java.util.Scanner;
 
-public class SeresVivos {
-    public Scanner scan = new Scanner(System.in);
-    
+public class SeresVivosOld {
+    Scanner scan = new Scanner(System.in);
     private String celula;
 
     private String materialGenetico;
@@ -18,8 +18,6 @@ public class SeresVivos {
     private String respiracao;
 
     private String locomocao;
-    
-    private String nomePopular;
 
     public String getRespiracao() {
         return respiracao;
@@ -29,15 +27,7 @@ public class SeresVivos {
         this.respiracao = respiracao;
     }
 
-    public String getNomePopular() {
-		return nomePopular;
-	}
-
-	public void setNomePopular(String nomePopular) {
-		this.nomePopular = nomePopular;
-	}
-
-	public String getLocomocao() {
+    public String getLocomocao() {
         return locomocao;
     }
 
@@ -45,7 +35,7 @@ public class SeresVivos {
         this.locomocao = locomocao;
     }
 
-    public SeresVivos(String celula, String materialGenetico, String metabolismo, String nutricao, String reproducao, String respiracao, String locomocao) {
+    public SeresVivosOld(String celula, String materialGenetico, String metabolismo, String nutricao, String reproducao, String respiracao, String locomocao) {
         this.celula = celula;
         this.materialGenetico = materialGenetico;
         this.metabolismo = metabolismo;
@@ -55,7 +45,7 @@ public class SeresVivos {
         this.locomocao = locomocao;
     }
 
-    public SeresVivos() {
+    public SeresVivosOld() {
 
     }
 
