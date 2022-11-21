@@ -1,3 +1,6 @@
+//Composto por 2 menus para cadastro e visualização de dados de SeresVivos em estruturas ArrayList
+//Serão instanciadas 5 listas para cadastro individual de cada reino
+
 package SeresVivos;
 
 import java.util.ArrayList;
@@ -35,6 +38,7 @@ public class Main {
 			System.out.println("Informe a operacao (1-Cadastrar   2-Exibir   3-Sair): ");
 			operacao = scan.nextInt();
 			
+			//Cadastro do ser vivo mediante opção desejada
 			if(operacao == 1) {
 				
 				System.out.println("Informe o ser vivo que deseja cadastrar: ");
@@ -70,7 +74,9 @@ public class Main {
 				default:
 					System.out.println("Reino inválido.");
 				}
-			}else if (operacao == 2) {
+			}
+			// Visualização da lista do ser vivo escolhido
+			else if (operacao == 2) {
 				System.out.println("Informe a lista do ser vivo que deseja visualizar: ");
 				System.out.println("1-Animalia   2-Plantae  3-Fungi  4-Monera   5-Protozoa: ");
 				choice = scan.nextInt();

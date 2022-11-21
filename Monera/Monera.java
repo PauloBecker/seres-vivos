@@ -1,6 +1,6 @@
 package Monera;
 
-import Animalia.SeresVivos;
+import SeresVivos.SeresVivos;
 
 public class Monera extends SeresVivos{
 		

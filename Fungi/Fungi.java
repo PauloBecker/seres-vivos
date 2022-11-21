@@ -1,6 +1,6 @@
 package Fungi;
 
-import Animalia.SeresVivos;
+import SeresVivos.SeresVivos;
 
 //import SeresVivos;
 
