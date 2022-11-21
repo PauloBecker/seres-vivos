@@ -16,18 +16,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		//aqui o array deveria ser do tipo AnimaliaEspecie, mas a classe ainda está pronta 
+		//Declaração de ArrayLists para cada reino
 		ArrayList<AnimaliaEspecie> animalia = new ArrayList<>(); 
-		
 		ArrayList<PlantaeEspecie> plantae = new ArrayList<>();
-		
-		//aqui o array deveria ser do tipo FungiEspecie, mas a classe ainda está pronta 
 		ArrayList<FungiEspecie> fungi = new ArrayList<>();
-		
-		//aqui o array deveria ser do tipo MoneraEspecie, mas a classe ainda está pronta 
 		ArrayList<MoneraEspecie> monera = new ArrayList<>();
-		
-		//aqui o array deveria ser do tipo ProtozoaEspecie, mas a classe ainda está pronta 
 		ArrayList<ProtistaEspecie> protozoa = new ArrayList<>();
 		
 		Scanner scan = new Scanner(System.in);
