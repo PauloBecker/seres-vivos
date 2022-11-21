@@ -1,6 +1,6 @@
 package Monera;
 
-public class Especie extends Genero {
+public class MoneraEspecie extends Genero {
 	
 	private String especie;
 

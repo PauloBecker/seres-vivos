@@ -1,6 +1,6 @@
 package Animalia;
 
-//import SeresVivos;
+import SeresVivos.SeresVivos;
 
 public class Animalia extends SeresVivos{
 	

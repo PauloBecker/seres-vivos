@@ -1,6 +1,6 @@
 package Fungi;
 
-public class Especie extends Genero {
+public class FungiEspecie extends Genero {
 
     private String especie;
 
