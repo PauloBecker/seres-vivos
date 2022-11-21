@@ -10,11 +10,6 @@ public class Main {
 
         animalia1.entradaDeDados();
 
-<<<<<<< HEAD:Main.java
-=======
-       
-        
->>>>>>> origin/main:old/Main.java
 
     }
 }
