@@ -13,7 +13,6 @@ public class ProtistaClasse extends ProtistaFilo{
     public String getClasseProtista() {
         return classeProtista;
     }
-
     public void setClasseProtista(String classeProtista) {
         this.classeProtista = classeProtista;
     }
