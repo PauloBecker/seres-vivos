@@ -10,6 +10,10 @@ public class PlantaeFamilia extends PlantaeOrdem{
 		
 	}
 
+	public PlantaeFamilia() {
+		super();
+	}
+
 	public String getNomeFamilia() {
 		return nomeFamilia;
 	}

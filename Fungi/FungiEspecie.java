@@ -1,31 +1,20 @@
-package Plantae;
+package Fungi;
 
-public class PlantaeEspecie extends PlantaeGenero{
+public class FungiEspecie extends Genero {
 
-	String nomeEspecie;
-	
-	public PlantaeEspecie(String nome, String nomeFilo, String nomeClasse, String nomeOrdem, String nomeFamilia,
-			String nomeGenero, String nomeEspecie) {
-		super(nome, nomeFilo, nomeClasse, nomeOrdem, nomeFamilia, nomeGenero);
-		this.nomeEspecie = nomeEspecie;
-		
-	}
+    private String especie;
 
-	public PlantaeEspecie() {
-		super();
-	}
+    public String getEspecie() {
+        return especie;
+    }
 
-	public String getNomeEspecie() {
-		return nomeEspecie;
-	}
+    public void setEspecie(String especie) {
+        this.especie = especie;
+    }
 
-	public void setNomeEspecie(String nomeEspecie) {
-		this.nomeEspecie = nomeEspecie;
-	}
-	
 	public void setDados(String nmReino) {
 		
-		this.setNome(nmReino);
+		this.setNomeFungi(nmReino);
 		
 		System.out.println("Nome Popular: ");
 		this.setNomePopular(scan.next());
@@ -52,57 +41,39 @@ public class PlantaeEspecie extends PlantaeGenero{
 		this.setMetabolismo(scan.next());
 		
 		System.out.println("Nome da Especie:");
-		this.setNomeEspecie(scan.next());
+		this.setEspecie(scan.next());
 		
 		System.out.println("Nome da Genero:");
-		this.setNomeGenero(scan.next());
+		this.setGenero(scan.next());
 				
 		System.out.println("Nome da Familia:");
-		this.setNomeFamilia(scan.next());
+		this.setFamilia(scan.next());
 		
 		System.out.println("Nome da Ordem:");
-		this.setNomeOrdem(scan.next());
+		this.setOrdem(scan.next());
 		
 		System.out.println("Nome da Classe:");
-		this.setNomeClasse(scan.next());
+		this.setClasse(scan.next());
 		
 		System.out.println("Nome da Filo:");
-		this.setNomeFilo(scan.next());
+		this.setFilo(scan.next());
 	}
 	
-	@Override
+    @Override
 	public String toString() {
 		
 		StringBuffer stringBuffer = new StringBuffer();
 		stringBuffer.append("\nReino: ");
-		stringBuffer.append(this.getNome());
-		
-		stringBuffer.append("\nFilo: ");
-		stringBuffer.append(this.getNomeFilo());
-		
-		stringBuffer.append("\nClasse: ");
-		stringBuffer.append(this.getNomeClasse());
-		
-		stringBuffer.append("\nOrdem: ");
-		stringBuffer.append(this.getNomeOrdem());
-		
-		stringBuffer.append("\nFamilia: ");
-		stringBuffer.append(this.getNomeFamilia());
-		
-		stringBuffer.append("\nGenero: ");
-		stringBuffer.append(this.getNomeGenero());
-		
-		stringBuffer.append("\nEspecie: ");
-		stringBuffer.append(this.getNomeEspecie());
+		stringBuffer.append(this.getNomeFungi());
 		
 		stringBuffer.append("\nNome Popular: ");
-		stringBuffer.append(this.getNomePopular());	
+		stringBuffer.append(this.getNomePopular());
 		
 		stringBuffer.append("\nTipo de organismo: ");
-		stringBuffer.append(this.getCelula());		
+		stringBuffer.append(this.getCelula());
 		
 		stringBuffer.append("\nTipo de material genético: ");
-		stringBuffer.append(this.getMaterialGenetico());	
+		stringBuffer.append(this.getMaterialGenetico());
 		
 		stringBuffer.append("\nCritério de nutrição: ");
 		stringBuffer.append(this.getNutricao());
@@ -112,13 +83,34 @@ public class PlantaeEspecie extends PlantaeGenero{
 		
 		stringBuffer.append("\nTipo de respiração: ");
 		stringBuffer.append(this.getRespiracao());
-	
+		
 		stringBuffer.append("\nTipo de locomoção: ");
-		stringBuffer.append(this.getLocomocao());	
+		stringBuffer.append(this.getLocomocao());
 		
 		stringBuffer.append("\nTipo de metabolismo: ");
 		stringBuffer.append(this.getMetabolismo());
 		
+		stringBuffer.append("\nFilo: ");
+		stringBuffer.append(this.getFilo());
+		
+		stringBuffer.append("\nClasse: ");
+		stringBuffer.append(this.getClasse());
+		
+		stringBuffer.append("\nOrdem: ");
+		stringBuffer.append(this.getOrdem());
+		
+		stringBuffer.append("\nFamilia: ");
+		stringBuffer.append(this.getFamilia());
+		
+		stringBuffer.append("\nGenero: ");
+		stringBuffer.append(this.getGenero());
+		
+		stringBuffer.append("\nEspecie: ");
+		stringBuffer.append(this.getEspecie());
+		
 		return stringBuffer.toString();
 	}
 }
+
+
+

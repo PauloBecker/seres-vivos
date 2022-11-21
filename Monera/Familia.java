@@ -11,15 +11,5 @@ public class Familia extends Ordem {
 	public void setFamilia(String familia) {
 		this.familia = familia;
 	}
-	
-	@Override
-	public void Cadastro() {
-		
-		System.out.println("Digite a Família: ");
-		setFamilia(scan.nextLine());
-		
-	}
-	
-	
 
 }

@@ -10,6 +10,10 @@ public class PlantaeClasse extends PlantaeFilo{
 		
 	}
 
+	public PlantaeClasse() {
+		super();
+	}
+
 	public String getNomeClasse() {
 		return nomeClasse;
 	}

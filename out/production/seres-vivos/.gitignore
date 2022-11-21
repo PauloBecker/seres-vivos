@@ -5,10 +5,16 @@
 /Plantae.class
 /Protista.class
 /SeresVivos.class
-<<<<<<< HEAD
-=======
-/Monera/
+/Animalia/
+/SeresVivos/
 /out/
 /Plantae/
 /Fungi/
+<<<<<<< HEAD
+/Monera/
+=======
 >>>>>>> origin/main
+/SeresVivos/
+/Animalia/
+>>>>>>> 343559c060097873ed9ad29cfdcaa8d8c6d1cd61
+/old/

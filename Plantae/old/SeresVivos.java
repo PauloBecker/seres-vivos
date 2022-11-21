@@ -1,10 +1,10 @@
-package SeresVivos;
+package Plantae;
+
 
 import java.util.Scanner;
 
 public class SeresVivos {
-    public Scanner scan = new Scanner(System.in);
-    
+    Scanner scan = new Scanner(System.in);
     private String celula;
 
     private String materialGenetico;

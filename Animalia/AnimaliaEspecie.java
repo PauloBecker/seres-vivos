@@ -1,3 +1,9 @@
+//Classe AnimaliaEspecie
+//Herda as classes SeresVivos, AnimaliaFilo, AnimaliaClasse, AnimaliaOrdem, AnimaliaFamilia, AnimaliaGenero
+//Possui 2 metodos principais: SetDados() e toSring()
+// 1) SetDados() - Permite a entrada de todos os dados do ser vivo através desta herança
+// 2) toString - Imprime todos os dados da ArrayList desejada (@Override)
+
 package Animalia;
 
 public class AnimaliaEspecie extends AnimaliaGenero{
@@ -15,6 +21,7 @@ public class AnimaliaEspecie extends AnimaliaGenero{
 		NomeAnimaliaEspecie = nomeAnimaliaEspecie;
 	}
 			
+	// Permite a entrada de todos os dados do ser vivo através desta herança
 	public void setDados(String nmReino) {
 		
 		this.setNomeAnimalia(nmReino);
@@ -43,25 +50,26 @@ public class AnimaliaEspecie extends AnimaliaGenero{
 		System.out.println("Tipo de metabolismo (Via degradativa ou Via biossintética): ");
 		this.setMetabolismo(scan.next());
 		
-		System.out.println("Nome da Especie:");
-		this.setNomeAnimaliaEspecie(scan.next());
-		
-		System.out.println("Nome da Genero:");
-		this.setNomeAnimaliaGenero(scan.next());
-				
-		System.out.println("Nome da Familia:");
-		this.setNomeAnimaliaFamilia(scan.next());
-		
-		System.out.println("Nome da Ordem:");
-		this.setNomeAnimaliaOrdem(scan.next());
+		System.out.println("Nome da Filo:");
+		this.setNomeAnimaliaFilo(scan.next());
 		
 		System.out.println("Nome da Classe:");
 		this.setNomeAnimaliaClasse(scan.next());
 		
-		System.out.println("Nome da Filo:");
-		this.setNomeAnimaliaFilo(scan.next());
+		System.out.println("Nome da Ordem:");
+		this.setNomeAnimaliaOrdem(scan.next());
+		
+		System.out.println("Nome da Familia:");
+		this.setNomeAnimaliaFamilia(scan.next());
+		
+		System.out.println("Nome da Genero:");
+		this.setNomeAnimaliaGenero(scan.next());
+		
+		System.out.println("Nome da Especie:");
+		this.setNomeAnimaliaEspecie(scan.next());
 	}
 	
+	// Imprime todos os dados cadastrados na classe Animalia (@Override)
 	@Override
 	public String toString() {
 		
