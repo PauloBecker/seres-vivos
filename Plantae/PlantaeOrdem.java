@@ -8,6 +8,9 @@ public class PlantaeOrdem extends PlantaeClasse{
 		this.nomeOrdem = nomeOrdem;
 		
 	}
+	public PlantaeOrdem() {
+		super();
+	}
 	public String getNomeOrdem() {
 		return nomeOrdem;
 	}

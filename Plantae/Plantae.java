@@ -1,20 +1,26 @@
+//feito por Bruno Wilke
+
 package Plantae;
 
-public class Plantae {
+public class Plantae extends SeresVivos{
 	
-	String nome = "Plantae";
+	String nomeReino = "Plantae";
 	
 	public Plantae(String nome) {
 		super();
-		this.nome = nome;
+		this.nomeReino = nome;
+	}
+
+	public Plantae() {
+		// TODO Auto-generated constructor stub
 	}
 
 	public String getNome() {
-		return nome;
+		return nomeReino;
 	}
 
 	public void setNome(String nome) {
-		this.nome = nome;
+		this.nomeReino = nome;
 	}
 	
 }

@@ -10,6 +10,10 @@ public class PlantaeGenero extends PlantaeFamilia{
 		// TODO Auto-generated constructor stub
 	}
 
+	public PlantaeGenero() {
+		super();
+	}
+
 	public String getNomeGenero() {
 		return nomeGenero;
 	}
